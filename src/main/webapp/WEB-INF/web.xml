@@ -4,4 +4,100 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>signin</servlet-name>
+  	<display-name>signin</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.signin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>signup</servlet-name>
+  	<display-name>signup</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.signup</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listvendormaster</servlet-name>
+  	<display-name>listvendormaster</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.listvendormaster</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listsalesinvoice</servlet-name>
+  	<display-name>listsalesinvoice</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.listsalesinvoice</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listpurchaseinvoice</servlet-name>
+  	<display-name>listpurchaseinvoice</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.listpurchaseinvoice</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listprofile</servlet-name>
+  	<display-name>listprofile</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.listprofile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>listmaterialmaster</servlet-name>
+  	<display-name>listmaterialmaster</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.listmaterialmaster</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>purchaseinvoice</servlet-name>
+  	<display-name>purchaseinvoice</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.purchaseinvoice</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>salesinvoice</servlet-name>
+  	<display-name>salesinvoice</display-name>
+  	<description></description>
+  	<servlet-class>gstdemo.salesinvoice</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signin</servlet-name>
+  	<url-pattern>/signin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>signup</servlet-name>
+  	<url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listvendormaster</servlet-name>
+  	<url-pattern>/listvendormaster</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listsalesinvoice</servlet-name>
+  	<url-pattern>/listsalesinvoice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listpurchaseinvoice</servlet-name>
+  	<url-pattern>/listpurchaseinvoice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listprofile</servlet-name>
+  	<url-pattern>/listprofile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>listmaterialmaster</servlet-name>
+  	<url-pattern>/listmaterialmaster</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>purchaseinvoice</servlet-name>
+  	<url-pattern>/purchaseinvoice</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>salesinvoice</servlet-name>
+  	<url-pattern>/salesinvoice</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+ 
+  
+  
 </web-app>
