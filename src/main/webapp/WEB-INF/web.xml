@@ -28,7 +28,7 @@
     <context-param>
         <description>OpenShift</description>
         <param-name>OSflag</param-name>
-        <param-value>0</param-value>
+        <param-value>1</param-value>
     </context-param>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
