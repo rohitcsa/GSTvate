@@ -27,10 +27,29 @@ public class listsalesinvoice extends HttpServlet {
 		
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
+		 Connection co = null;
+	        String OSflag = getServletContext().getInitParameter("OSflag");
+	        String host = null, driver = null, userName = null, password = null;
+	        switch (OSflag) {
+	            case "0": {
+	                host = getServletContext().getInitParameter("host");
+	                driver = getServletContext().getInitParameter("driver");
+	                userName = getServletContext().getInitParameter("userName");
+	                password = getServletContext().getInitParameter("password");
+	                break;
+	            }
+	            case "1": {
+	                host = "jdbc:mysql://" + System.getenv("OPENSHIFT_MYSQL_DB_HOST") + ":" + System.getenv("OPENSHIFT_MYSQL_DB_PORT") + "/gstdemo";
+	                userName = System.getenv("MYSQL_USER");
+	                password = System.getenv("MYSQL_PASSWORD");
+	                driver = getServletContext().getInitParameter("driver");
+	                break;
+	            }
+	        }
 		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/gstdemo","root","2309");
-			Statement stmt=con.createStatement();
+			Class.forName(driver);
+			co=DriverManager.getConnection(host, userName, password);
+			Statement stmt=co.createStatement();
 			ResultSet rs=stmt.executeQuery("select * from listsalesinvoice");
 			
 			out.println("<table>");

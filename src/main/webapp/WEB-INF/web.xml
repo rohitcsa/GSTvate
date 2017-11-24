@@ -1,8 +1,35 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
+<?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+<session-config>
+        <session-timeout>
+            -1
+        </session-timeout>
+    </session-config>
+    <context-param>
+        <description>JDBC Host Name</description>
+        <param-name>host</param-name>
+        <param-value>jdbc:mysql://localhost:3306/gstdemo</param-value>
+    </context-param>
+    <context-param>
+        <description>JDBC Driver</description>
+        <param-name>driver</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    <context-param>
+        <description>JDBC Username</description>
+        <param-name>userName</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    <context-param>
+        <description>JDBC Password</description>
+        <param-name>password</param-name>
+        <param-value>2309</param-value>
+    </context-param>
+    <context-param>
+        <description>OpenShift</description>
+        <param-name>OSflag</param-name>
+        <param-value>0</param-value>
+    </context-param>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
   	<servlet-name>signin</servlet-name>
