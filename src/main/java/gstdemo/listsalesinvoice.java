@@ -34,7 +34,7 @@ public class listsalesinvoice extends HttpServlet {
 	                host = "jdbc:mysql://" + System.getenv("MYSQL_SERVICE_HOST") + ":" + System.getenv("MYSQL_SERVICE_PORT") + "/gstdemo";
 	                userName = "user3WD";
 	                password = "VUfLfNg3EdCsU2LJ";
-	                driver = getServletContext().getInitParameter("driver");
+	                driver = "com.mysql.cj.jdbc.Driver";
 	               
 		try{
 			Class.forName(driver);
